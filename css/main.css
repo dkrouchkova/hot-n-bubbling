@@ -1,0 +1,66 @@
+.clearfixed:after, section:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/*---------------------*/
+/* Main Styles */
+/*---------------------*/
+body {
+  background: rgba(0, 0, 0, 0.7);
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header,
+nav,
+main,
+aside,
+section,
+footer {
+  background: rgba(255, 255, 255, 0.7);
+  border: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+.projects {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+.demos {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+footer {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}

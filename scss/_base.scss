@@ -1,0 +1,50 @@
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+}
+
+/*---------------------*/
+/* Main Styles */
+/*---------------------*/
+body {
+	background: $transblack;
+	@include container(960px);
+}
+
+header,
+nav,
+main,
+aside,
+section,
+footer
+ {
+	@include box();
+}
+
+.projects {
+	@include span(8);
+}
+
+.demos {
+	@include span(3);
+}
+
+footer {
+	@include span(12);
+}
+
+section {
+	@extend .clearfixed;
+}

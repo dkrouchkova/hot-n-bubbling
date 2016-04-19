@@ -1,3 +1,9 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .clearfixed:after, section:after {
   display: table;
   content: " ";
@@ -16,51 +22,93 @@ li {
   display: inline;
 }
 
-footer {
-  text-align: center;
-  font-size: 0.8em;
-}
-
 /*---------------------*/
 /* Main Styles */
 /*---------------------*/
 body {
   background: rgba(0, 0, 0, 0.7);
+}
+
+main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
-body:after {
+main:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-header,
-nav,
 main,
 aside,
 section,
 footer {
   background: rgba(255, 255, 255, 0.7);
-  border: solid 2px rgba(0, 0, 0, 0.7);
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/*---------------------*/
+/* header */
+/*---------------------*/
+header {
+  background: rgba(230, 162, 133, 0.7) 0 0 no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  padding-top: 10em;
+}
+
+/*---------------------*/
+/* main */
+/*---------------------*/
+/*---------------------*/
+/* projects */
+/*---------------------*/
 .projects {
-  width: 66.10169%;
+  width: 66.66667%;
   float: left;
-  margin-right: 1.69492%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+.projects figure {
+  width: 37.5%;
+  float: left;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+  width: 46%;
+  margin: 2%;
+}
+.projects figure img {
+  width: 100%;
 }
 
-.demos {
-  width: 23.72881%;
+/*---------------------*/
+/* demos & links */
+/*---------------------*/
+.in-class,
+.link-to {
+  width: 25%;
   float: left;
-  margin-right: 1.69492%;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  float: right;
 }
 
+/*---------------------*/
+/* footer */
+/*---------------------*/
 footer {
   width: 100%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  text-align: center;
+  font-size: 0.8em;
 }

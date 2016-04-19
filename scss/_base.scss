@@ -10,41 +10,94 @@ li {
 	display: inline;
 }
 
-footer {
-	text-align: center;
-	font-size: 0.8em;
-}
-
 /*---------------------*/
 /* Main Styles */
 /*---------------------*/
 body {
 	background: $transblack;
+}
+
+main {
 	@include container(960px);
 }
 
-header,
-nav,
 main,
 aside,
 section,
-footer
- {
-	@include box();
-}
-
-.projects {
-	@include span(8);
-}
-
-.demos {
-	@include span(3);
-}
-
 footer {
-	@include span(12);
+	@include box();
 }
 
 section {
 	@extend .clearfixed;
 }
+
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+
+/*---------------------*/
+/* header */
+/*---------------------*/
+
+header {
+	background: $header-bkg 0 0 no-repeat; 
+	background-size: cover;
+	height: 50vh;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding-top: 10em;
+} //header
+
+/*---------------------*/
+/* main */
+/*---------------------*/
+
+
+/*---------------------*/
+/* projects */
+/*---------------------*/
+
+.projects {
+	@include span(8);
+
+
+	.gallery {
+		// margin-left: 5%;
+	} //gallery
+	
+	figure {
+		@include span(3 of 8);
+		width: 46%; 
+		margin: 2%;
+
+		img {
+			width: 100%;
+		}
+	} //figure
+
+} //projects
+
+/*---------------------*/
+/* demos & links */
+/*---------------------*/
+
+.in-class,
+.link-to {
+	@include span(3);
+	float: right;
+}
+
+/*---------------------*/
+/* footer */
+/*---------------------*/
+
+footer {
+	@include span(12);
+	
+	text-align: center;
+	font-size: 0.8em;
+}
+
